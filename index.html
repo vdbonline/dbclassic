@@ -5,7 +5,7 @@
 <style type="text/css">
 article,footer,header,nav,section{display:block;}body,html{display:block;height:100%;}*{margin:0;padding:0;border:0;box-sizing:border-box;font-family:Tahoma,Geneva,sans-serif}::selection{background:yellow;color:#000}a{text-decoration:none}a:link, a:visited{color:#454545;text-decoration:none;}a:hover{color:#444;}a img{border:none;border-width:0;outline:none;}.clear{clear:both;}.navbar,.quickedit,{display:none}.post ul li span{display:block;text-decoration:none;transition:all .3s ease-out}img{max-width:100%;vertical-align:middle;}::after,::before{font-family:FontAwesome,Tahoma,Geneva,sans-serif;}b,strong{font-weight:bold}
 /*b*/ body{background:#000;color:#888;line-height:normal;font-size:10px;}
-h2{margin-top:20px;width:100%;display:block;text-align:center}	
+h2{margin:20px auto;width:100%;display:block;text-align:center}	
 .mvid{display:block;margin:0 auto;width:100%;max-height:600px;background:#000;position:relative;}
 .mvid video{display:block;width:100%;height:auto;background:#000;max-height:600px;}
 .blgger iframe{display:block;position:absolute;top:0;left:0;margin:0;border:0;padding:0;z-index:3;width:100%;height:100%;}
@@ -37,17 +37,7 @@ var Base64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456
 	var nep = getUrlVars().ep;// Numero do ep.
     var chaveENCODE = Base64.encode(chave);
    
-    //PADRAO DE COMENTARIOS
-	if (null === postid || "undefined" == typeof postid)
-        var postid = chave;
-    //Player configuracoes.
-    var player_config = 'data-setup=\'{"controls": true, "autoplay": false}\'', resp = "fluid='true'";//Define o idioma do Videojs player.
-    var poster = v_poster;//Define a variavel poster do player.
-    var player = tocador;//Define a seleceÃ&#167;Ã&#163;o do player.
-    var legenda = l_;//Legendas.
-    /*///////////////////////////
-     * Estrutura dos players. //
-     */////////////////////////
+    
     switch (player) {
         case"dragonball":
             $("#video_player").html('<h2>Dragon Ball Clássico EP '+nep+' Dublado</h2>\
