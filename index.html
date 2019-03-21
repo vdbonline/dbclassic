@@ -37,6 +37,14 @@ var Base64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456
 	var nep = getUrlVars().ep;// Numero do ep.
     var chaveENCODE = Base64.encode(chave);
    
+
+if (null === postid || "undefined" == typeof postid)
+var postid = chave;
+    //Player configuracoes.
+    var player_config = 'data-setup=\'{"controls": true, "autoplay": false}\'', resp = "fluid='true'";
+    var poster = v_poster;
+    var player = tocador;
+    var legenda = l_;
     
     switch (player) {
         case"dragonball":
